@@ -5,7 +5,6 @@ payload:
   - DOMAIN-SUFFIX,boundhub.com
   - DOMAIN-SUFFIX,greasyfork.org
   - DOMAIN-SUFFIX,voicetube.com
-  - DOMAIN-SUFFIX,agefans.net
   - DOMAIN-SUFFIX,limbopro.xyz
   - DOMAIN-SUFFIX,notepad-plus-plus.org
   - DOMAIN-SUFFIX,b48t.com
@@ -41,5 +40,12 @@ payload:
   - DOMAIN-SUFFIX,lbry.com
   - DOMAIN-SUFFIX,spee.ch
   - DOMAIN-SUFFIX,lbryplayer.xyz
+  - DOMAIN-SUFFIX,shinybound.com
+  - DOMAIN-SUFFIX,postimg.cc
+  - DOMAIN-SUFFIX,akiba-web.com
+  - DOMAIN-SUFFIX,xsspic.com
+  - DOMAIN-SUFFIX,picstate.com
+  - DOMAIN-SUFFIX,dpic.me
+  - DOMAIN-SUFFIX,longglovelover.com
 #  - DOMAIN-SUFFIX,
 #  - DOMAIN-SUFFIX,
