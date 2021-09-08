@@ -1,0 +1,203 @@
+  "routings": [
+    {
+      "remarks": "全局(Global)",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": "0-65535",
+          "inboundTag": null,
+          "outboundTag": "proxy",
+          "ip": null,
+          "domain": null,
+          "protocol": null
+        }
+      ],
+      "enabled": true,
+      "locked": false
+    },
+    {
+      "remarks": "绕过大陆",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": [],
+          "outboundTag": "direct",
+          "ip": [
+            "geoip:private"
+          ],
+          "domain": [
+            "geosite:private"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": [],
+          "outboundTag": "block",
+          "ip": null,
+          "domain": [
+            "geosite:category-ads-all"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": [],
+          "outboundTag": "proxy",
+          "ip": null,
+          "domain": [
+            "geosite:github"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": [],
+          "outboundTag": "direct",
+          "ip": [
+            "geoip:cn"
+          ],
+          "domain": [
+            "geosite:private",
+            "geosite:apple",
+            "geosite:microsoft",
+            "geosite:cn"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": "0-65535",
+          "inboundTag": [],
+          "outboundTag": "proxy",
+          "ip": null,
+          "domain": null,
+          "protocol": null
+        }
+      ],
+      "enabled": true,
+      "locked": false
+    },
+    {
+      "remarks": "仅代理匹配",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": "",
+          "inboundTag": [],
+          "outboundTag": "block",
+          "ip": [],
+          "domain": [
+            "geosite:category-ads-all"
+          ],
+          "protocol": []
+        },
+        {
+          "type": null,
+          "port": "",
+          "inboundTag": [],
+          "outboundTag": "direct",
+          "ip": [
+            "geoip:private"
+          ],
+          "domain": [
+            "geosite:private"
+          ],
+          "protocol": []
+        },
+        {
+          "type": null,
+          "port": "",
+          "inboundTag": [],
+          "outboundTag": "proxy",
+          "ip": [],
+          "domain": [
+            "geosite:github"
+          ],
+          "protocol": []
+        },
+        {
+          "type": null,
+          "port": "",
+          "inboundTag": [],
+          "outboundTag": "direct",
+          "ip": [],
+          "domain": [
+            "geosite:apple",
+            "geosite:microsoft"
+          ],
+          "protocol": []
+        },
+        {
+          "type": null,
+          "port": "",
+          "inboundTag": [],
+          "outboundTag": "proxy",
+          "ip": [],
+          "domain": [
+            "geosite:geolocation-!cn"
+          ],
+          "protocol": []
+        },
+        {
+          "type": null,
+          "port": "0-65535",
+          "inboundTag": [],
+          "outboundTag": "direct",
+          "ip": [],
+          "domain": [],
+          "protocol": []
+        }
+      ],
+      "enabled": true,
+      "locked": false
+    },
+    {
+      "remarks": "locked",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "proxy",
+          "ip": [],
+          "domain": [
+            "geosite:google"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": [],
+          "domain": [
+            "domain:example-example.com",
+            "domain:example-example2.com"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "block",
+          "ip": [],
+          "domain": [
+            "geosite:category-ads-all"
+          ],
+          "protocol": null
+        }
+      ],
+      "enabled": true,
+      "locked": true
+    }
