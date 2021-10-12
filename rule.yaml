@@ -87,4 +87,5 @@ payload:
   - DOMAIN-SUFFIX,busybox.net
   - DOMAIN-SUFFIX,1.1.1.1
   - IP-CIDR,1.1.1.1/32
+  - DOMAIN-SUFFIX,hotlink.cc
 #  - DOMAIN-SUFFIX,
