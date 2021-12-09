@@ -1,8 +1,65 @@
   "routings": [
     {
-      "remarks": "全局(Global)",
+      "remarks": "绕过大陆(Whitelist)",
       "url": "",
       "rules": [
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "block",
+          "ip": null,
+          "domain": [
+            "geosite:category-ads-all"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": "",
+          "inboundTag": [],
+          "outboundTag": "direct",
+          "ip": [],
+          "domain": [],
+          "protocol": [
+            "bittorrent"
+          ]
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": [
+            "domain:baidu.com",
+            "domain:example-example2.com"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": [
+            "geosite:cn"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": [
+            "geoip:private",
+            "geoip:cn"
+          ],
+          "domain": null,
+          "protocol": null
+        },
         {
           "type": null,
           "port": "0-65535",
@@ -17,30 +74,32 @@
       "locked": false
     },
     {
-      "remarks": "绕过大陆",
+      "remarks": "Blacklist",
       "url": "",
       "rules": [
         {
           "type": null,
           "port": null,
-          "inboundTag": [],
+          "inboundTag": null,
           "outboundTag": "direct",
-          "ip": [
-            "geoip:private"
-          ],
-          "domain": [
-            "geosite:private"
-          ],
-          "protocol": null
+          "ip": null,
+          "domain": null,
+          "protocol": [
+            "bittorrent"
+          ]
         },
         {
           "type": null,
           "port": null,
           "inboundTag": [],
-          "outboundTag": "block",
-          "ip": null,
+          "outboundTag": "proxy",
+          "ip": [
+            "geoip:telegram"
+          ],
           "domain": [
-            "geosite:category-ads-all"
+            "geosite:gfw",
+            "geosite:greatfire",
+            "geosite:tld-!cn"
           ],
           "protocol": null
         },
@@ -51,31 +110,126 @@
           "outboundTag": "proxy",
           "ip": null,
           "domain": [
-            "geosite:github"
+            "domain:arxiv.org",
+            "domain:github.com",
+            "domain:github.io",
+            "domain:githubassets.com",
+            "domain:githubusercontent.com",
+            "domain:1337x.to",
+            "domain:officeapps.live.com",
+            "domain:docs.live.net",
+            "domain:live.net",
+            "domain:live.com",
+            "domain:ikimedia.org",
+            "domain:privacypic.com",
+            "domain:anjiantu.com",
+            "domain:b-ok.cc",
+            "domain:b-ok.globa",
+            "domain:z-lib.org",
+            "domain:wolframalpha.com",
+            "domain:texstudio.org",
+            "domain:justmysocks.net",
+            "domain:nvidia.com",
+            "domain:pubpeer.com",
+            "domain:deepl.com",
+            "domain:freethesaurus.com",
+            "domain:outline.com",
+            "domain:v2fly.org",
+            "domain:whatismyip.com",
+            "domain:cordcloud.biz",
+            "domain:aqicn.org",
+            "domain:rapeboard.com",
+            "domain:boundhub.com",
+            "domain:greasyfork.org",
+            "domain:voicetube.com",
+            "domain:limbopro.xyz",
+            "domain:notepad-plus-plus.org",
+            "domain:b48t.com",
+            "domain:xbsj7625.website",
+            "domain:tampermonkey.net",
+            "domain:bondagevalley.cc",
+            "domain:forumophilia.com",
+            "domain:odysee.com",
+            "domain:cartoonmad.cc",
+            "domain:bit.ly",
+            "domain:foxnews.com",
+            "domain:linetv.tw",
+            "domain:v2rayssr.com",
+            "domain:fnf.xyz",
+            "domain:github.com",
+            "domain:sosobttt.com",
+            "domain:japanhub.net",
+            "domain:thatav.net",
+            "domain:cordcloud.org",
+            "domain:xfantasy.tv",
+            "domain:k2s.cc",
+            "domain:clips4sale.com",
+            "domain:cordcloud.cc",
+            "domain:t.me",
+            "domain:telegram.me",
+            "domain:telegram.org",
+            "domain:zhs.ooo",
+            "domain:cccat.io",
+            "domain:internal.example.com",
+            "domain:example.com",
+            "domain:vanwanet.com",
+            "domain:lbry.com",
+            "domain:spee.ch",
+            "domain:lbryplayer.xyz",
+            "domain:shinybound.com",
+            "domain:postimg.cc",
+            "domain:akiba-web.com",
+            "domain:xsspic.com",
+            "domain:picstate.com",
+            "domain:dpic.me",
+            "domain:longglovelover.com",
+            "domain:githubusercontent.com",
+            "domain:libuv.org",
+            "domain:uxnr.de",
+            "domain:anstey.ca",
+            "domain:askapache.com",
+            "domain:haxx.se",
+            "domain:curl.se",
+            "domain:sourceforge.net",
+            "domain:netfilter.org",
+            "domain:sourceware.org",
+            "domain:lysator.liu.se",
+            "domain:icarus.com",
+            "domain:samba.org",
+            "domain:oetiker.ch",
+            "domain:collectd.org",
+            "domain:free.fr",
+            "domain:nongnu.org",
+            "domain:oberhumer.com",
+            "domain:xmlsoft.org",
+            "domain:oracle.com",
+            "domain:pagure.org",
+            "domain:gnome.org",
+            "domain:muug.ca",
+            "domain:schmorp.de",
+            "domain:freedesktop.org",
+            "domain:tuxfamily.org",
+            "domain:libsodium.org",
+            "domain:porcupine.org",
+            "domain:tcpdump.org",
+            "domain:skoll.ca",
+            "domain:pyyaml.org",
+            "domain:nlnetlabs.nl",
+            "domain:corpit.ru",
+            "domain:network.cz",
+            "domain:lwfinger.com",
+            "domain:candelatech.com",
+            "domain:thekelleys.org.uk",
+            "domain:busybox.net",
+            "domain:bondageobserver.com"
           ],
           "protocol": null
         },
         {
-          "type": null,
-          "port": null,
-          "inboundTag": [],
-          "outboundTag": "direct",
-          "ip": [
-            "geoip:cn"
-          ],
-          "domain": [
-            "geosite:private",
-            "geosite:apple",
-            "geosite:microsoft",
-            "geosite:cn"
-          ],
-          "protocol": null
-        },
-        {
-          "type": null,
+          "type": "field",
           "port": "0-65535",
-          "inboundTag": [],
-          "outboundTag": "proxy",
+          "inboundTag": null,
+          "outboundTag": "direct",
           "ip": null,
           "domain": null,
           "protocol": null
@@ -85,24 +239,13 @@
       "locked": false
     },
     {
-      "remarks": "仅代理匹配",
+      "remarks": "Global",
       "url": "",
       "rules": [
         {
           "type": null,
-          "port": "",
-          "inboundTag": [],
-          "outboundTag": "block",
-          "ip": [],
-          "domain": [
-            "geosite:category-ads-all"
-          ],
-          "protocol": []
-        },
-        {
-          "type": null,
-          "port": "",
-          "inboundTag": [],
+          "port": null,
+          "inboundTag": null,
           "outboundTag": "direct",
           "ip": [
             "geoip:private"
@@ -110,50 +253,16 @@
           "domain": [
             "geosite:private"
           ],
-          "protocol": []
-        },
-        {
-          "type": null,
-          "port": "",
-          "inboundTag": [],
-          "outboundTag": "proxy",
-          "ip": [],
-          "domain": [
-            "geosite:github"
-          ],
-          "protocol": []
-        },
-        {
-          "type": null,
-          "port": "",
-          "inboundTag": [],
-          "outboundTag": "direct",
-          "ip": [],
-          "domain": [
-            "geosite:apple",
-            "geosite:microsoft"
-          ],
-          "protocol": []
-        },
-        {
-          "type": null,
-          "port": "",
-          "inboundTag": [],
-          "outboundTag": "proxy",
-          "ip": [],
-          "domain": [
-            "geosite:geolocation-!cn"
-          ],
-          "protocol": []
+          "protocol": null
         },
         {
           "type": null,
           "port": "0-65535",
-          "inboundTag": [],
-          "outboundTag": "direct",
-          "ip": [],
-          "domain": [],
-          "protocol": []
+          "inboundTag": null,
+          "outboundTag": "proxy",
+          "ip": null,
+          "domain": null,
+          "protocol": null
         }
       ],
       "enabled": true,
@@ -201,3 +310,4 @@
       "enabled": true,
       "locked": true
     }
+  ],
