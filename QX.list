@@ -85,3 +85,9 @@ HOST-SUFFIX,lwfinger.com,Self
 HOST-SUFFIX,candelatech.com,Self
 HOST-SUFFIX,thekelleys.org.uk,Self
 HOST-SUFFIX,busybox.net,Self
+HOST-SUFFIX,1.1.1.1
+HOST-SUFFIX,IP-CIDR,1.1.1.1/32
+HOST-SUFFIX,hotlink.cc
+HOST-SUFFIX,bondageobserver.com
+HOST-SUFFIX,k8s.gcr.io
+HOST-SUFFIX,node-fnf.xyz
