@@ -86,7 +86,6 @@ DOMAIN-SUFFIX,thekelleys.org.uk
 DOMAIN-SUFFIX,busybox.net
 DOMAIN-SUFFIX,bondageobserver.com
 DOMAIN-SUFFIX,1.1.1.1
-DOMAIN-SUFFIX,IP-CIDR,1.1.1.1/32
 DOMAIN-SUFFIX,hotlink.cc
 DOMAIN-SUFFIX,k8s.gcr.io
 DOMAIN-SUFFIX,node-fnf.xyz
