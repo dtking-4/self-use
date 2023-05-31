@@ -98,4 +98,5 @@ payload:
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,forefront.ai
   - DOMAIN-SUFFIX,you.com
+  - DOMAIN-SUFFIX,chatpdf.com
 #  - DOMAIN-SUFFIX,
