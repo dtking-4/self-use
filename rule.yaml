@@ -95,25 +95,21 @@ payload:
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,nat.dev
   - DOMAIN-SUFFIX,iole.tv
-  - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,forefront.ai
-  - DOMAIN-SUFFIX,you.com
-  - DOMAIN-SUFFIX,chatpdf.com
   - DOMAIN-SUFFIX,steamstatic.com
-  - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,hsforms.com
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,javdb.com
   - DOMAIN-SUFFIX,supjav.com
   - DOMAIN-SUFFIX,bingviz.com
-  - DOMAIN-SUFFIX,bing.com
   - DOMAIN-SUFFIX,api.microsoftapp.net
   - DOMAIN-SUFFIX,location.microsoft.com
   - DOMAIN-SUFFIX,bingviz.microsoftapp.net
   - DOMAIN-SUFFIX,edge.microsoft.com
   - DOMAIN-SUFFIX,data.microsoft.com
-  - DOMAIN-SUFFIX,gstatic.com
-  - DOMAIN-SUFFIX,googleapis.com
-  - DOMAIN-SUFFIX,google.cn
-  - DOMAIN-SUFFIX,twimg.com
-#  - DOMAIN-SUFFIX,
+  - DOMAIN-SUFFIX,jdforum.net
+  - DOMAIN-SUFFIX,mypikpak.com
+  - DOMAIN-SUFFIX,laowang.vip
+  - DOMAIN-SUFFIX,cnbdsm.com
+  - DOMAIN-SUFFIX,xifanacg.com
+  
