@@ -115,6 +115,6 @@ payload:
   - DOMAIN-SUFFIX,pornbb.org
   - DOMAIN-SUFFIX,vipergirls.to
   - DOMAIN-SUFFIX,forumophilia.com
-  - DOMAIN-SUFFIX,static.rust-lang.org
-
+  - DOMAIN-SUFFIX,rust-lang.org
+  - DOMAIN-SUFFIX,crates.io
   
